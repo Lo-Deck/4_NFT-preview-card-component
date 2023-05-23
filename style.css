@@ -1,0 +1,111 @@
+/*PRINCIPAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    width: 35.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
+    border-radius: 2.0rem;      
+    padding: 2.2rem;
+    margin: auto;
+    height: 60rem;
+}
+
+.image{
+    width: 100%;
+    height: 30rem;
+    border-radius: 1.0rem;
+    background: url(./images/image-equilibrium.jpg) no-repeat center/100%;
+}
+
+.image:hover{
+    cursor: pointer;
+    background: url(./images/icon-view.svg) no-repeat center,
+                linear-gradient(90deg, rgba(0,0,0,0) 0%, hsla(178, 100%, 50%, 0.7) 0%),               
+                url(./images/image-equilibrium.jpg) center/100%;
+}
+
+/*SECTION1*/
+
+h1{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p.text{
+    font-weight: 300;
+}
+
+p.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+p.info span:first-child{
+    color: hsl(178, 100%, 50%);
+}
+
+p.info span:first-child::before{
+    content: "";
+    display: inline-block;
+    width: 2.0rem;
+    height: 2.0rem;
+    vertical-align: middle;
+    background: url(./images/icon-ethereum.svg) no-repeat;
+}
+
+p.info span:last-child::before{
+    content: "";
+    display: inline-block;
+    width: 2.0rem;
+    height: 2.0rem;
+    vertical-align: middle;
+    background: url(./images/icon-clock.svg) no-repeat;
+    padding-right: 0.5rem;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);    
+}
+
+/*FOOTER*/
+
+footer p span{
+    color: hsl(0, 0%, 100%);
+}
+
+footer p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+footer p::before{
+    content: "";
+    display: inline-block;
+    width: 4.0rem;
+    height: 4.0rem;
+    vertical-align: middle;
+    background: url(./images/image-avatar.png) no-repeat center/contain;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 1.7rem;
+}
+
